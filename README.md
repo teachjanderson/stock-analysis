@@ -5,7 +5,12 @@ The purpose of this project was providing our client with accurate and efficient
 The Macro returns three pieces of information: the different stocks by name, their total volume, and the yearly return as a percent. The name of the stocks is reported by abbreviation, the daily volume is the shares traded and the return is the percent different from the starting price to ending price in a given year. 
 
 ## Results
-Initially, a subroutine was created to analyze the performance of stocks for two given years: 2017 and 2018. While many stocks showed positive performance in 2017, only two stocks, ENPH and RUN continued showing positive performance in 2018. This initial subroutine took. 
+Initially, a subroutine was created to analyze the performance of stocks for two given years: 2017 and 2018. While many stocks showed positive performance in 2017, only two stocks, ENPH and RUN continued showing positive performance in 2018. These initial subroutines took 
+<p align="center">
+<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/2017.png" width="600" />
+  
+<p align="center">
+<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/2018.png" width="600" />
 
 Results: Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 Summary: In a summary statement, address the following questions.
