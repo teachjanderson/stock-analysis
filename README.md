@@ -15,6 +15,37 @@ As seen below, these initial subroutines took over 6 tenths of a second to compl
   
 <p align="center">
 <img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/2018.png" width="600" />
+  
+## Refractoring Results
+The initial subroutine looped through each of the stock tickers and rows. By creating output arrays and initializing the ticker volume to zero, we could create a more efficienct looping system. These creates more space in memory as it loops. 
+<p align="center">
+<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/Initializing.png" width="600" />
+This next step was a challenge, and took some research to solve (which is referenced at the end of the analysis). As the subroutine looped through the tickers, it needed to identify when one ticker ended and another began. Using the following code, the subroutine identified as it looped through a new ticker name. The loop identifided when the ticker name changed and went back one to close and begin a new correct loop. While this idea makes sense, refractoring the code proved challenging. In the end, this proved an efficient method. 
+
+  For i = 2 To RowCount
+
+        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+        
+            If Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+                tickerStartingPrice(tickerIndex) = Cells(i, 6).Value
+            End If
+        
+            If Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
+                tickerendingPrice(tickerIndex) = Cells(i, 6).Value
+        
+                tickerIndex = tickerIndex + 1
+            End If
+        
+        Next i
+
+<p align="center">
+<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/Looping.png" width="600" />
+
+Finally, another loop to output the values onto the spreadsheet and adding buttons to make it simple for the user. 
+<p align="center">
+<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/Looping2.png" width="600" />
+
+## Summary
 
   
 Results: Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
