@@ -7,7 +7,7 @@ The Macro returns three pieces of information: the different stocks by name, the
 ## Results
 Initially, a subroutine was created to analyze the performance of stocks for two given years: 2017 and 2018. While many stocks showed positive performance in 2017, only two stocks, ENPH and RUN continued showing positive performance in 2018. These initial subroutines took 
 <p align="center">
-<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/2017.png" width="600" />
+<img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/2017.1.png" width="600" />
   
 <p align="center">
 <img src="https://github.com/teachjanderson/stock-analysis/blob/main/images/2018.png" width="600" />
