@@ -59,11 +59,14 @@ This refractoring resulted in a change of nearly 85% in comparison to the origin
   
 ## Summary
 **What are the advantages or disadvantages of refactoring code?**
+
 There are several advantages to refracting code. The first is efficiency or performance. In this case, while the human use is not noticeable at this scale, the refractoring increased performance dramatically as represented by percent of change. The second reason is understanding of the code. The refractored code did not increase or decrease the clearness of the code, but in general refractoring towards simplicity and understanding (readability) is always an improvement. Two disadvantages of refractoring code are time and complexity. Understanding the original script, identifying ways to improve while maintaining clarity, takes time and effort. It's quite possible all that time makes few if any improvements. 
 
 **How do these pros and cons apply to refactoring the original VBA script?**
+
 In our case, referencing the points above, there was a substantial change in proficiency and that made the refractoring a pro. However, this did, as mentioned, come with time requirements and understanding. There were complexities and challenges in understanding limitations of the original script and identifying ways to improve them. 
   
 **References**
+
 In initially refractoring the code, I altered my methods considerably in running into challenges with the If and Else statements. After analyzing and understanding different approaches and solutions to other problems, I found this method to identify when the tickers changed. This led me to a greater understanding of the loops as well and more efficient methods using our output arrays. One pro of this entire refractoring is a better understanding of the original code, memorizing basic syntax, and understanding efficient ways to loop through large amounts of data. 
 https://zoom.us/rec/play/3y8QSEzGpawN1aFaIdTTB07ORUoGVwlzCxrhpsY_vSxIxMMKwIEolwHZrynFP_TXJ1XLWYVjWcEC4rxd.4q3FJMwSSyZxC3BG?startTime=1637415343000&_x_zm_rtaid=-i-cEITxScOE-OFMLjGzqQ.1637430207851.2075cf95887cdc9463ec29789c0911c9&_x_zm_rhtaid=958
